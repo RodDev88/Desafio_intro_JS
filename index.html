@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+  , initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Producto y checkout inputs y calculo total</title>
+  </head>
+  <body>
+    <!-- Encabezado principal -->
+    <h1>Coffee con Wes ☕</h1>
+
+    <div class="container">
+      <!-- Card de Producto -->
+      <div class="card">
+        <img src="/assets/imgs/wes_mug.png" alt="Zizou wes Anderson Mug" />
+        <h2>Tasas de Wes Anderson</h2>
+        <input type="number" id="cantidad" placeholder="Cantidad" />
+        <input type="text" id="color" placeholder="Color (en inglés)" />
+        <p>Precio: $8000</p>
+        <button onclick="calcularTotal()">Calcular Total</button>
+      </div>
+
+      <!-- Checkout -->
+      <div class="checkout">
+        <p>Total: <span id="total">$0</span></p>
+        <p>Cantidad: <span id="cantidadDisplay">0</span></p>
+        <p>Color: <span class="color-circle" id="colorCircle"></span></p>
+      </div>
+    </div>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
